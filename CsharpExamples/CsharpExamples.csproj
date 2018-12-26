@@ -49,6 +49,7 @@
     <None Include="MainApp_12_5.cs" />
     <None Include="MainApp_12_6.cs" />
     <None Include="MainApp_12_7.cs" />
+    <Compile Include="MainApp_12_test1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
