@@ -58,6 +58,12 @@
     <None Include="MainApp_13_6.cs" />
     <None Include="MainApp_13_test1.cs" />
     <None Include="MainApp_13_test2.cs" />
+    <None Include="MainApp_14_2.cs" />
+    <None Include="MainApp_14_3.cs" />
+    <None Include="MainApp_14_4_1.cs" />
+    <None Include="MainApp_14_4_2.cs" />
+    <None Include="MainApp_14_5.cs" />
+    <Compile Include="MainApp_14_5_.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
