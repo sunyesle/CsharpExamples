@@ -71,7 +71,9 @@
     <None Include="MainApp_15_4.cs" />
     <None Include="MainApp_15_5.cs" />
     <None Include="MainApp_15_6.cs" />
-    <Compile Include="MainApp_15_6_.cs" />
+    <None Include="MainApp_15_6_.cs" />
+    <None Include="MainApp_15_test1.cs" />
+    <None Include="MainApp_15_test2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
