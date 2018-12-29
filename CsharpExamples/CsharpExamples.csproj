@@ -68,6 +68,10 @@
     <None Include="MainApp_15_2_1.cs" />
     <None Include="MainApp_15_2_2.cs" />
     <None Include="MainApp_15_3.cs" />
+    <None Include="MainApp_15_4.cs" />
+    <None Include="MainApp_15_5.cs" />
+    <None Include="MainApp_15_6.cs" />
+    <Compile Include="MainApp_15_6_.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
