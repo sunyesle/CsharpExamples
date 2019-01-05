@@ -117,6 +117,9 @@
     <None Include="MainApp_19_1_4.cs" />
     <None Include="MainApp_19_1_5_1.cs" />
     <None Include="MainApp_19_1_5_2.cs" />
+    <None Include="MainApp_19_1_5_3.cs" />
+    <None Include="MainApp_19_2_1.cs" />
+    <None Include="MainApp_19_2_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
