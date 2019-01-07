@@ -51,6 +51,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -123,6 +124,11 @@
     <None Include="MainApp_19_2_3.cs" />
     <None Include="MainApp_19_3.cs" />
     <None Include="MainApp_19_3_1.cs" />
+    <None Include="MainApp_20_2.cs" />
+    <None Include="MainApp_20_3_1.cs">
+      <SubType>Form</SubType>
+    </None>
+    <Compile Include="MainApp_20_3_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
