@@ -145,6 +145,8 @@
     <None Include="MainApp_20_4_3.cs">
       <SubType>Form</SubType>
     </None>
+    <None Include="MainApp_21_2_Server.cs" />
+    <Compile Include="MainApp_21_2_Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
