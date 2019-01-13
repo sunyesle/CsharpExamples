@@ -32,7 +32,7 @@ namespace FUP_21_3
         int GetSize();
     }
 
-    class Message : ISerializable
+    public class Message : ISerializable
     {
         public Header Header { get; set; }
         public ISerializable Body { get; set; }

@@ -7,7 +7,7 @@ using System.IO;
 
 namespace FUP_21_3
 {
-    class MessageUtil
+    public class MessageUtil
     {
         public static void Send(Stream writer, Message msg)
         {

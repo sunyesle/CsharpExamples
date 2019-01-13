@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FUP_21_3
 {
-    class Header : ISerializable
+    public class Header : ISerializable
     {
         public uint MSGID { get; set; }
         public uint MSGTYPE { get; set; }   
