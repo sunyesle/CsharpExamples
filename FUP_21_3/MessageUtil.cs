@@ -53,16 +53,16 @@ namespace FUP_21_3
             ISerializable body = null;
             switch (header.MSGTYPE)
             {
-                case CONSTATNS.REQ_FILE_SEND:
+                case CONSTANTS.REQ_FILE_SEND:
                     body = new BodyRequest(bBuffer);
                     break;
-                case CONSTATNS.REP_FILE_SEND:
+                case CONSTANTS.REP_FILE_SEND:
                     body = new BodyResponse(bBuffer);
                     break;
-                case CONSTATNS.FILE_SEND_DATA:
+                case CONSTANTS.FILE_SEND_DATA:
                     body = new BodyData(bBuffer);
                     break;
-                case CONSTATNS.FILE_SEND_RES:
+                case CONSTANTS.FILE_SEND_RES:
                     body = new BodyResult(bBuffer);
                     break;
             }

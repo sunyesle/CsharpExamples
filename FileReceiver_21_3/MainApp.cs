@@ -15,7 +15,7 @@ namespace FileReceiver_21_3
     {
         static void Main(string[] args)
         {
-            if(args.Length < 1)
+            if (args.Length < 1)
             {
                 Console.WriteLine("사용법 : {0} <Directory>", Process.GetCurrentProcess().ProcessName);
                 return;
@@ -47,7 +47,7 @@ namespace FileReceiver_21_3
 
                     Message reqMsg = MessageUtil.Receive(stream);
 
-                    if(reqMsg.Header.MSGTYPE != CONSTATNS.REQ_FILE_SEND)
+                    if (reqMsg.Header.MSGTYPE != CONSTANTS.REQ_FILE_SEND)
                     {
                         stream.Close();
                         client.Close();
@@ -63,15 +63,15 @@ namespace FileReceiver_21_3
                     rspMsg.Body = new BodyResponse()
                     {
                         MSGID = reqMsg.Header.MSGID,
-                        RESPONSE = CONSTATNS.ACCEPTED
+                        RESPONSE = CONSTANTS.ACCEPTED
                     };
                     rspMsg.Header = new Header()
                     {
                         MSGID = msgId++,
-                        MSGTYPE = CONSTATNS.REP_FILE_SEND,
+                        MSGTYPE = CONSTANTS.REP_FILE_SEND,
                         BODYLEN = (uint)reqMsg.Body.GetSize(),
-                        FRAGMENTED = CONSTATNS.NOT_FREGMENT,
-                        LASTMSG = CONSTATNS.LASTMSG,
+                        FRAGMENTED = CONSTANTS.NOT_FRAGMENTED,
+                        LASTMSG = CONSTANTS.LASTMSG,
                         SEQ = 0
                     };
 
@@ -80,7 +80,7 @@ namespace FileReceiver_21_3
                         rspMsg.Body = new BodyResponse()
                         {
                             MSGID = reqMsg.Header.MSGID,
-                            RESPONSE = CONSTATNS.DENIED
+                            RESPONSE = CONSTANTS.DENIED
                         };
                         MessageUtil.Send(stream, rspMsg);
                         stream.Close();
@@ -99,10 +99,10 @@ namespace FileReceiver_21_3
 
                     uint? dataMsgId = null;
                     ushort prevSeq = 0;
-                    while ((reqMsg  = MessageUtil.Receive(stream)) != null)
+                    while ((reqMsg = MessageUtil.Receive(stream)) != null)
                     {
                         Console.Write("#");
-                        if (reqMsg.Header.MSGTYPE != CONSTATNS.FILE_SEND_DATA)
+                        if (reqMsg.Header.MSGTYPE != CONSTANTS.FILE_SEND_DATA)
                             break;
 
                         if (dataMsgId == null)
@@ -113,16 +113,16 @@ namespace FileReceiver_21_3
                                 break;
                         }
 
-                        if(prevSeq++ != reqMsg.Header.SEQ)
+                        if (prevSeq++ != reqMsg.Header.SEQ)
                         {
                             Console.WriteLine("{0}, {1}", prevSeq, reqMsg.Header.SEQ);
                         }
 
                         file.Write(reqMsg.Body.GetBytes(), 0, reqMsg.Body.GetSize());
 
-                        if (reqMsg.Header.FRAGMENTED == CONSTATNS.NOT_FREGMENT)
+                        if (reqMsg.Header.FRAGMENTED == CONSTANTS.NOT_FRAGMENTED)
                             break;
-                        if (reqMsg.Header.LASTMSG == CONSTATNS.LASTMSG)
+                        if (reqMsg.Header.LASTMSG == CONSTANTS.LASTMSG)
                             break;
                     }
 
@@ -136,15 +136,15 @@ namespace FileReceiver_21_3
                     rstMsg.Body = new BodyResult()
                     {
                         MSGID = reqMsg.Header.MSGID,
-                        RESULT = CONSTATNS.SUCCESS
+                        RESULT = CONSTANTS.SUCCESS
                     };
                     rstMsg.Header = new Header()
                     {
                         MSGID = msgId++,
-                        MSGTYPE = CONSTATNS.FILE_SEND_RES,
+                        MSGTYPE = CONSTANTS.FILE_SEND_RES,
                         BODYLEN = (uint)rstMsg.Body.GetSize(),
-                        FRAGMENTED = CONSTATNS.NOT_FREGMENT,
-                        LASTMSG = CONSTATNS.LASTMSG,
+                        FRAGMENTED = CONSTANTS.NOT_FRAGMENTED,
+                        LASTMSG = CONSTANTS.LASTMSG,
                         SEQ = 0
                     };
 
@@ -155,7 +155,7 @@ namespace FileReceiver_21_3
                         rstMsg.Body = new BodyResult()
                         {
                             MSGID = reqMsg.Header.MSGID,
-                            RESULT = CONSTATNS.FAIL
+                            RESULT = CONSTANTS.FAIL
                         };
 
                         MessageUtil.Send(stream, rstMsg);

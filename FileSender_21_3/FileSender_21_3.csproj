@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D5D1C57-988F-477B-B039-35F06E7A9200}</ProjectGuid>
+    <ProjectGuid>{0E673412-F9B2-4FC5-87EC-70B616982DA6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FileReceiver_21_3</RootNamespace>
-    <AssemblyName>FileReceiver_21_3</AssemblyName>
+    <RootNamespace>FileSender_21_3</RootNamespace>
+    <AssemblyName>FileSender_21_3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

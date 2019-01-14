@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace FUP_21_3
 {
-    public class CONSTATNS
+    public class CONSTANTS
     {
         public const uint REQ_FILE_SEND = 0x01;
         public const uint REP_FILE_SEND = 0x02;
         public const uint FILE_SEND_DATA = 0x03;
         public const uint FILE_SEND_RES = 0x04;
 
-        public const byte NOT_FREGMENT = 0x00;
-        public const byte FREGMENTE = 0x01;
+        public const byte NOT_FRAGMENTED = 0x00;
+        public const byte FRAGMENTED = 0x01;
 
         public const byte NOT_LASTMSG = 0x00;
         public const byte LASTMSG = 0x01;
