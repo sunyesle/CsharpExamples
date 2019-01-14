@@ -30,6 +30,7 @@ namespace FileReceiver_21_3
             TcpListener server = null;
             try
             {
+                // IP주소를 0으로 입력하면 127.0.0.1뿐만 아니라 OS에 할당되어 있는 어떤 주소로도 서버에 접속이 가능합니다.
                 IPEndPoint localAddress = new IPEndPoint(0, bindPort);
 
                 server = new TcpListener(localAddress);
@@ -45,6 +46,7 @@ namespace FileReceiver_21_3
 
                     NetworkStream stream = client.GetStream();
 
+                    // 클라이언트가 보내온 파일 전송 요청 메시지를 수신함
                     Message reqMsg = MessageUtil.Receive(stream);
 
                     if (reqMsg.Header.MSGTYPE != CONSTANTS.REQ_FILE_SEND)
@@ -69,12 +71,13 @@ namespace FileReceiver_21_3
                     {
                         MSGID = msgId++,
                         MSGTYPE = CONSTANTS.REP_FILE_SEND,
-                        BODYLEN = (uint)reqMsg.Body.GetSize(),
+                        BODYLEN = (uint)rspMsg.Body.GetSize(),
                         FRAGMENTED = CONSTANTS.NOT_FRAGMENTED,
                         LASTMSG = CONSTANTS.LASTMSG,
                         SEQ = 0
                     };
 
+                    // yes가 아닌경우 클라이언트에게 거부응답을 보냄
                     if (answer != "yes")
                     {
                         rspMsg.Body = new BodyResponse()
@@ -88,6 +91,7 @@ namespace FileReceiver_21_3
 
                         continue;
                     }
+                    // yes인경우 승낙응답을 보냄
                     else
                         MessageUtil.Send(stream, rspMsg);
 
@@ -95,6 +99,8 @@ namespace FileReceiver_21_3
 
                     long fileSize = reqBody.FILESIZE;
                     string fileName = Encoding.Default.GetString(reqBody.FILENAME);
+
+                    // 업로드 파일 스트림 생성
                     FileStream file = new FileStream(dir + "\\" + fileName, FileMode.Create);
 
                     uint? dataMsgId = null;
@@ -113,15 +119,19 @@ namespace FileReceiver_21_3
                                 break;
                         }
 
+                        // 메시지 순서가 어긋나면 전송 중단
                         if (prevSeq++ != reqMsg.Header.SEQ)
                         {
                             Console.WriteLine("{0}, {1}", prevSeq, reqMsg.Header.SEQ);
                         }
 
+                        // 전송받은 스트림을 서버에서 생성한 파일에 기록함
                         file.Write(reqMsg.Body.GetBytes(), 0, reqMsg.Body.GetSize());
 
-                        if (reqMsg.Header.FRAGMENTED == CONSTANTS.NOT_FRAGMENTED)
+                        // 분할 메시지가 아니면 반복을 한번만하고 빠져나옴
+                        if (reqMsg.Header.FRAGMENTED == CONSTANTS.NOT_FRAGMENTED) 
                             break;
+                        // 마지막 메시지면 반복문을 빠져나옴
                         if (reqMsg.Header.LASTMSG == CONSTANTS.LASTMSG)
                             break;
                     }
@@ -148,8 +158,10 @@ namespace FileReceiver_21_3
                         SEQ = 0
                     };
 
+                    // 파일 전송 요청에 담겨온 파일크기와 실제로 받은 파일의 크기를 비교하여 같으면 성공 메시지를 보냄
                     if (fileSize == recvFileSize)
                         MessageUtil.Send(stream, rstMsg);
+                    // 파일 크기에 이상이 있으면 실패 메시지를 보냄
                     else
                     {
                         rstMsg.Body = new BodyResult()

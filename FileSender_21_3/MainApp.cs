@@ -58,8 +58,10 @@ namespace FileSender_21_3
 
                 NetworkStream stream = client.GetStream();
 
+                // 클라이언트는 서버에 접속하자마자 파일 전송 요청을 보냄
                 MessageUtil.Send(stream, reqMsg);
 
+                //서버의 응답을 받음
                 Message rspMsg = MessageUtil.Receive(stream);
 
                 if (rspMsg.Header.MSGTYPE != CONSTANTS.REP_FILE_SEND)
@@ -74,6 +76,7 @@ namespace FileSender_21_3
                     return;
                 }
 
+                // 서버에서 전송 요청을 수락했다면, 파일 스트림을 열어 서버로 보낼 준비를 함
                 using(Stream fileStream = new FileStream(filePath, FileMode.Open))
                 {
                     Console.WriteLine(fileStream.Length.ToString());
@@ -85,7 +88,8 @@ namespace FileSender_21_3
                     int totalRead = 0;
                     ushort msgSeq = 0;
                     byte fragmented = (fileStream.Length < CHUNK_SIZE) ? CONSTANTS.NOT_FRAGMENTED : CONSTANTS.FRAGMENTED;
-
+                    
+                    // 모든 파일의 내용이 전송될 때까지 파일 스트림을 0x03메시지에 담아 서버로 보냄
                     while (totalRead < fileStream.Length)
                     {
                         int read = fileStream.Read(rbytes, 0, CHUNK_SIZE);
@@ -110,8 +114,10 @@ namespace FileSender_21_3
 
                         MessageUtil.Send(stream, fileMsg);
                     }
+
                     Console.WriteLine();
 
+                    // 서버에서 파일을 제대로 받았는지에 대한 응답을 받음
                     Message rstMsg = MessageUtil.Receive(stream);
 
                     BodyResult result = ((BodyResult)rstMsg.Body);
