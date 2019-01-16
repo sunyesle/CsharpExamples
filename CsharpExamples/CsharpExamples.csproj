@@ -61,7 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ch12_exception handling\MainApp_12_1.cs" />
+    <None Include="ch09_property\MainApp_9_2.cs" />
+    <None Include="ch12_exception handling\MainApp_12_1.cs" />
     <None Include="ch12_exception handling\MainApp_12_2.cs" />
     <None Include="ch12_exception handling\MainApp_12_4.cs" />
     <None Include="ch12_exception handling\MainApp_12_5.cs" />
@@ -147,6 +148,13 @@
     </None>
     <None Include="ch21_network programming\MainApp_21_2_Server.cs" />
     <None Include="ch21_network programming\MainApp_21_2_Client.cs" />
+    <None Include="ch09_property\MainApp_9_3.cs" />
+    <None Include="ch09_property\MainApp_9_4.cs" />
+    <None Include="ch09_property\MainApp_9_5.cs" />
+    <None Include="ch09_property\MainApp_9_6.cs" />
+    <None Include="ch09_property\MainApp_9_7.cs" />
+    <None Include="ch09_property\MainApp_9_test1.cs" />
+    <None Include="ch09_property\MainApp_9_test2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
