@@ -61,92 +61,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MainApp_12_1.cs" />
-    <None Include="MainApp_12_2.cs" />
-    <None Include="MainApp_12_4.cs" />
-    <None Include="MainApp_12_5.cs" />
-    <None Include="MainApp_12_6.cs" />
-    <None Include="MainApp_12_7.cs" />
-    <None Include="MainApp_12_test1.cs" />
-    <None Include="MainApp_13_1.cs" />
-    <None Include="MainApp_13_2.cs" />
-    <None Include="MainApp_13_3.cs" />
-    <None Include="MainApp_13_4.cs" />
-    <None Include="MainApp_13_5.cs" />
-    <None Include="MainApp_13_6.cs" />
-    <None Include="MainApp_13_test1.cs" />
-    <None Include="MainApp_13_test2.cs" />
-    <None Include="MainApp_14_2.cs" />
-    <None Include="MainApp_14_3.cs" />
-    <None Include="MainApp_14_4_1.cs" />
-    <None Include="MainApp_14_4_2.cs" />
-    <None Include="MainApp_14_5.cs" />
-    <None Include="MainApp_14_5_.cs" />
-    <None Include="MainApp_14_test2.cs" />
-    <None Include="MainApp_15_2_1.cs" />
-    <None Include="MainApp_15_2_2.cs" />
-    <None Include="MainApp_15_3.cs" />
-    <None Include="MainApp_15_4.cs" />
-    <None Include="MainApp_15_5.cs" />
-    <None Include="MainApp_15_6.cs" />
-    <None Include="MainApp_15_6_.cs" />
-    <None Include="MainApp_15_test1.cs" />
-    <None Include="MainApp_15_test2.cs" />
-    <None Include="MainApp_16_1_1.cs" />
-    <None Include="MainApp_16_1_2.cs" />
-    <None Include="MainApp_16_1_3.cs" />
-    <None Include="MainApp_16_2_1.cs" />
-    <None Include="MainApp_16_2_2.cs" />
-    <None Include="MainApp_16_2_3.cs" />
-    <None Include="MainApp_16_test1.cs" />
-    <None Include="MainApp_17_1.cs" />
-    <None Include="MainApp_17_2.cs" />
-    <None Include="MainApp_17_3.cs" />
-    <None Include="MainApp_18_1_1.cs" />
-    <None Include="MainApp_18_1_2.cs">
+    <Compile Include="ch12_exception handling\MainApp_12_1.cs" />
+    <None Include="ch12_exception handling\MainApp_12_2.cs" />
+    <None Include="ch12_exception handling\MainApp_12_4.cs" />
+    <None Include="ch12_exception handling\MainApp_12_5.cs" />
+    <None Include="ch12_exception handling\MainApp_12_6.cs" />
+    <None Include="ch12_exception handling\MainApp_12_7.cs" />
+    <None Include="ch12_exception handling\MainApp_12_test1.cs" />
+    <None Include="ch13_delegate event\MainApp_13_1.cs" />
+    <None Include="ch13_delegate event\MainApp_13_2.cs" />
+    <None Include="ch13_delegate event\MainApp_13_3.cs" />
+    <None Include="ch13_delegate event\MainApp_13_4.cs" />
+    <None Include="ch13_delegate event\MainApp_13_5.cs" />
+    <None Include="ch13_delegate event\MainApp_13_6.cs" />
+    <None Include="ch13_delegate event\MainApp_13_test1.cs" />
+    <None Include="ch13_delegate event\MainApp_13_test2.cs" />
+    <None Include="ch14_lambda\MainApp_14_2.cs" />
+    <None Include="ch14_lambda\MainApp_14_3.cs" />
+    <None Include="ch14_lambda\MainApp_14_4_1.cs" />
+    <None Include="ch14_lambda\MainApp_14_4_2.cs" />
+    <None Include="ch14_lambda\MainApp_14_5.cs" />
+    <None Include="ch14_lambda\MainApp_14_5_.cs" />
+    <None Include="ch14_lambda\MainApp_14_test2.cs" />
+    <None Include="ch15_LINQ\MainApp_15_2_1.cs" />
+    <None Include="ch15_LINQ\MainApp_15_2_2.cs" />
+    <None Include="ch15_LINQ\MainApp_15_3.cs" />
+    <None Include="ch15_LINQ\MainApp_15_4.cs" />
+    <None Include="ch15_LINQ\MainApp_15_5.cs" />
+    <None Include="ch15_LINQ\MainApp_15_6.cs" />
+    <None Include="ch15_LINQ\MainApp_15_6_.cs" />
+    <None Include="ch15_LINQ\MainApp_15_test1.cs" />
+    <None Include="ch15_LINQ\MainApp_15_test2.cs" />
+    <None Include="ch16_reflection attribute\MainApp_16_1_1.cs" />
+    <None Include="ch16_reflection attribute\MainApp_16_1_2.cs" />
+    <None Include="ch16_reflection attribute\MainApp_16_1_3.cs" />
+    <None Include="ch16_reflection attribute\MainApp_16_2_1.cs" />
+    <None Include="ch16_reflection attribute\MainApp_16_2_2.cs" />
+    <None Include="ch16_reflection attribute\MainApp_16_2_3.cs" />
+    <None Include="ch16_reflection attribute\MainApp_16_test1.cs" />
+    <None Include="ch17_dynamic\MainApp_17_1.cs" />
+    <None Include="ch17_dynamic\MainApp_17_2.cs" />
+    <None Include="ch17_dynamic\MainApp_17_3.cs" />
+    <None Include="ch18_file handling\MainApp_18_1_1.cs" />
+    <None Include="ch18_file handling\MainApp_18_1_2.cs">
       <CustomToolNamespace>
       </CustomToolNamespace>
     </None>
-    <None Include="MainApp_18_2_1.cs" />
-    <None Include="MainApp_18_2_2.cs" />
-    <None Include="MainApp_18_3.cs" />
-    <None Include="MainApp_18_4.cs" />
-    <None Include="MainApp_18_5_1.cs" />
-    <None Include="MainApp_18_5_2.cs" />
-    <None Include="MainApp_19_1_1.cs" />
-    <None Include="MainApp_19_1_2.cs" />
-    <None Include="MainApp_19_1_3.cs" />
-    <None Include="MainApp_19_1_4.cs" />
-    <None Include="MainApp_19_1_5_1.cs" />
-    <None Include="MainApp_19_1_5_2.cs" />
-    <None Include="MainApp_19_1_5_3.cs" />
-    <None Include="MainApp_19_2_1.cs" />
-    <None Include="MainApp_19_2_2.cs" />
-    <None Include="MainApp_19_2_3.cs" />
-    <None Include="MainApp_19_3.cs" />
-    <None Include="MainApp_19_3_1.cs" />
-    <None Include="MainApp_20_2.cs" />
-    <None Include="MainApp_20_3_1.cs">
+    <None Include="ch18_file handling\MainApp_18_2_1.cs" />
+    <None Include="ch18_file handling\MainApp_18_2_2.cs" />
+    <None Include="ch18_file handling\MainApp_18_3.cs" />
+    <None Include="ch18_file handling\MainApp_18_4.cs" />
+    <None Include="ch18_file handling\MainApp_18_5_1.cs" />
+    <None Include="ch18_file handling\MainApp_18_5_2.cs" />
+    <None Include="ch19_thread task\MainApp_19_1_1.cs" />
+    <None Include="ch19_thread task\MainApp_19_1_2.cs" />
+    <None Include="ch19_thread task\MainApp_19_1_3.cs" />
+    <None Include="ch19_thread task\MainApp_19_1_4.cs" />
+    <None Include="ch19_thread task\MainApp_19_1_5_1.cs" />
+    <None Include="ch19_thread task\MainApp_19_1_5_2.cs" />
+    <None Include="ch19_thread task\MainApp_19_1_5_3.cs" />
+    <None Include="ch19_thread task\MainApp_19_2_1.cs" />
+    <None Include="ch19_thread task\MainApp_19_2_2.cs" />
+    <None Include="ch19_thread task\MainApp_19_2_3.cs" />
+    <None Include="ch19_thread task\MainApp_19_3.cs" />
+    <None Include="ch19_thread task\MainApp_19_3_1.cs" />
+    <None Include="ch20_windows form\MainApp_20_2.cs" />
+    <None Include="ch20_windows form\MainApp_20_3_1.cs">
       <SubType>Form</SubType>
     </None>
-    <None Include="MainApp_20_3_2.cs" />
-    <None Include="MainApp_20_4_1.cs">
+    <None Include="ch20_windows form\MainApp_20_3_2.cs" />
+    <None Include="ch20_windows form\MainApp_20_4_1.cs">
       <SubType>Form</SubType>
     </None>
-    <None Include="MainApp_20_4_2_1.cs">
+    <None Include="ch20_windows form\MainApp_20_4_2_1.cs">
       <SubType>Form</SubType>
     </None>
-    <None Include="MainApp_20_4_2_2.cs">
+    <None Include="ch20_windows form\MainApp_20_4_2_2.cs">
       <SubType>Form</SubType>
     </None>
-    <None Include="MainApp_20_4_2_3.cs">
+    <None Include="ch20_windows form\MainApp_20_4_2_3.cs">
       <SubType>Form</SubType>
     </None>
-    <None Include="MainApp_20_4_3.cs">
+    <None Include="ch20_windows form\MainApp_20_4_3.cs">
       <SubType>Form</SubType>
     </None>
-    <None Include="MainApp_21_2_Server.cs" />
-    <Compile Include="MainApp_21_2_Client.cs" />
+    <None Include="ch21_network programming\MainApp_21_2_Server.cs" />
+    <None Include="ch21_network programming\MainApp_21_2_Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -181,5 +181,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
