@@ -155,6 +155,10 @@
     <None Include="ch09_property\MainApp_9_7.cs" />
     <None Include="ch09_property\MainApp_9_test1.cs" />
     <None Include="ch09_property\MainApp_9_test2.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_1.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_2.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_3_1.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_3_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
