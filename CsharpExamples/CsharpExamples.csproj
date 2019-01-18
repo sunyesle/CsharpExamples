@@ -159,6 +159,17 @@
     <None Include="ch10_array collection indexer\MainApp_10_2.cs" />
     <None Include="ch10_array collection indexer\MainApp_10_3_1.cs" />
     <None Include="ch10_array collection indexer\MainApp_10_3_2.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_4.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_5.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_6.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_7_1.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_7_2.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_7_3.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_7_4.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_8.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_9.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_test2.cs" />
+    <None Include="ch10_array collection indexer\MainApp_10_test5.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
