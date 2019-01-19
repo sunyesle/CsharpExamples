@@ -170,6 +170,13 @@
     <None Include="ch10_array collection indexer\MainApp_10_9.cs" />
     <None Include="ch10_array collection indexer\MainApp_10_test2.cs" />
     <None Include="ch10_array collection indexer\MainApp_10_test5.cs" />
+    <None Include="ch11_generic programming\MainApp_11_2.cs" />
+    <None Include="ch11_generic programming\MainApp_11_3.cs" />
+    <None Include="ch11_generic programming\MainApp_11_4.cs" />
+    <None Include="ch11_generic programming\MainApp_11_5_1.cs" />
+    <None Include="ch11_generic programming\MainApp_11_5_2.cs" />
+    <None Include="ch11_generic programming\MainApp_11_5_3.cs" />
+    <None Include="ch11_generic programming\MainApp_11_5_4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
