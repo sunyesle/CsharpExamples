@@ -177,6 +177,7 @@
     <None Include="ch11_generic programming\MainApp_11_5_2.cs" />
     <None Include="ch11_generic programming\MainApp_11_5_3.cs" />
     <None Include="ch11_generic programming\MainApp_11_5_4.cs" />
+    <Compile Include="ch11_generic programming\MainApp_11_6.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
