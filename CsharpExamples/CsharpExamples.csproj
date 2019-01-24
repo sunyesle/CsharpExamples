@@ -187,7 +187,9 @@
     <None Include="ch07_class\MainApp_7_8.cs" />
     <None Include="ch07_class\MainApp_7_7.cs" />
     <None Include="ch07_class\MainApp_7_9.cs" />
-    <Compile Include="ch07_class\MainApp_7_10.cs" />
+    <None Include="ch07_class\MainApp_7_10.cs" />
+    <None Include="ch07_class\MainApp_7_11.cs" />
+    <None Include="ch07_class\MainApp_7_12.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
