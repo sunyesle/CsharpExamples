@@ -193,7 +193,8 @@
     <None Include="ch07_class\MainApp_7_13.cs" />
     <None Include="ch07_class\MainApp_7_14.cs" />
     <None Include="ch07_class\MainApp_7_15.cs" />
-    <Compile Include="ch07_class\MainApp_7_16.cs" />
+    <None Include="ch07_class\MainApp_7_16.cs" />
+    <Compile Include="ch08_interface\MainApp_8_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
