@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace CsharpExamples.ch08_interface // Interface
 {
+    // 인터페이스
+    // - 메소드, 이벤트, 인덱서, 프로퍼티만 가질수 있음, 구현부 없음
+    // - 접근 제한 한정자를 사용할수 없음, 모든 것이 public으로 선언됨
+    // - 인스턴스를 가질 수 없음, 이 인터페이스를 상속받는 클래스의 인스턴스를 만드는 것은 가능함
+
     interface ILogger
     {
         void WriteLog(string message);
